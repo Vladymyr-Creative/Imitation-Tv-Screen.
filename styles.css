@@ -1,0 +1,36 @@
+.screen,
+.column,
+.item {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.screen,
+[id="addScreen"] .column {
+    justify-content: center;
+    display: flex;
+}
+
+.column {
+    flex-grow: 1;
+}
+
+.column:focus {
+    border:2px dashed blue;
+    outline: blue;
+}
+
+.item:focus {
+    border:2px dashed red;
+    outline: red;
+}
+
+.item .image {
+    width: 30px;
+    height: 30px;
+}
+
+[id="addScreen"].screen {
+    flex-direction: column;
+}

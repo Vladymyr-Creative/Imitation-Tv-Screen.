@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="Screen" data-screen=""></div>
+
+<template id="Screen1">
+    <h3>Screen 1</h3>
+    <div id="mainScreen" class="screen">
+        <div id="accountsContainer" class="column" data-column-id="0" tabindex="0"></div>
+        <div class="column" data-column-id="1" tabindex="0">
+            <p class="item btn" data-item-id="0" data-item-type="btn" data-btn-action="add" tabindex="0">ADD</p>
+        </div>
+    </div>
+</template>
+
+<template id="Screen2">
+    <h3>Screen 2</h3>
+    <div id="addScreen" class="screen">
+        <div class="column" data-column-id="0" tabindex="0">
+            <textarea name="title" cols="30" rows="10" data-item-id="0" data-item-type="text" class="item"></textarea>
+        </div>
+        <div class="column" data-column-id="1" tabindex="0">
+            <p class="item btn" data-item-id="0" data-active="false" data-item-type="btn" data-btn-action="add" tabindex="0">ADD</p>
+            <p class="item btn" data-item-id="1" data-active="false" data-item-type="btn" data-btn-action="cancel" tabindex="0">CANCEL</p>
+        </div>
+    </div>
+</template>
+
+<template id="itemAccount">
+    <div class="item" tabindex="0" data-item-id="" data-active="false" data-item-type="item">
+        <span class="title"></span>
+        <img src="" alt="image" class="image">
+    </div>
+</template>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
